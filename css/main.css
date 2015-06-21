@@ -1,0 +1,117 @@
+.header, .footer {
+	right:0;
+	left:0;
+	background-color: #8caca6;
+	min-width: 100%;
+}
+
+.header {
+	position: fixed;
+	height:100px;
+	top:0;
+}
+
+.floor-plan-container {
+	position: fixed;
+	min-height: 540px;
+	height: 540px;
+	margin-top: 9%;
+	margin-bottom: 120px;
+	width: 824px;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+img {
+	margin-left: auto;
+	margin-right: auto;
+	width: 824px;
+	height: 540px;
+}
+
+.footer {
+	position: fixed;
+	height:100px;
+	bottom:0px;
+	margin-top: 20px;
+}
+
+.swatch {
+	display: inline-block;
+	border: 1px solid black;
+	border-radius: 4px;
+	height: 30px;
+	width: 60px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.swatch:hover {
+	cursor: pointer;
+}
+
+li, p {
+	display: inline;
+	list-style: none;
+	margin-right: 4px;
+	padding: 0px;
+}
+
+p {
+	line-height: 28px; 
+}
+
+ul {
+	padding-left: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	margin-top: 15px;
+	height: 30px;
+}
+
+.tile-list,
+.stone-list,
+.laminate-list,
+.vinyl-list {
+	margin-top: 10px;
+}
+
+.tile-list,
+.carpet-list {
+	width: 400px;
+}
+
+
+
+.left,
+.middle,
+.right {
+	display: inline-block;
+	border: none;
+	height: 100px;
+}
+
+.left {
+	width: 400px;
+}
+
+.middle {
+	margin-left: 20px;
+	width: 198px;
+}
+
+.right {
+	width: 265px;
+	margin-left: 18px;
+}
+
+#flooring-lists-container {
+	height: 100px;
+	width: 909px;
+	min-width: 909px;
+	border: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="inView">
+	<head>
+		<meta charset="UTF-8">
+		<title>inView</title>
+		<link rel="icon" type="image/png" href="img/house.png">
+		<script src="js/jquery-1.11.2.min.js"</script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+		<link rel="stylesheet" href="css/main.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.1/angular.min.js"></script>
+		<script src="js/app.js"></script>
+		
+	</head>
+	<body ng-controller="inViewController">
+		<div class="header">
+		</div>
+		<div class="floor-plan-container">
+			<img src="img/fp1.png">
+		</div>
+		<div class="footer">
+			<div id="flooring-lists-container">
+				<div class="left">
+					<ul class="carpet-list">
+						<li ng-repeat="carpet in flooring.carpet">
+							<div ng-style="{'background-color': carpet.color}" class="swatch">
+								<p>{{ carpet.tag }}</p>
+							</div>
+						</li>
+					</ul>
+					<ul class="tile-list">
+						<li ng-repeat="tile in flooring.tile">
+							<div ng-style="{'background-color': tile.color}" class="swatch">
+								<p>{{ tile.tag }}</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="middle">
+					<ul class="wood-list">
+						<li ng-repeat="wood in flooring.wood">
+							<div ng-style="{'background-color': wood.color}" class="swatch">
+								<p>{{ wood.tag }}</p>
+							</div>
+						</li>
+					</ul>
+					<ul class="stone-list">
+						<li ng-repeat="stone in flooring.stone">
+							<div ng-style="{'background-color': stone.color}" class="swatch">
+								<p>{{ stone.tag }}</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+				<div class="right">
+					<ul class="laminate-list">
+						<li ng-repeat="laminate in flooring.laminate">
+							<div ng-style="{'background-color': laminate.color}" class="swatch">
+								<p>{{ laminate.tag }}</p>
+							</div>
+						</li>
+					</ul>
+					<ul class="vinyl-list">
+						<li ng-repeat="vinyl in flooring.vinyl">
+							<div ng-style="{'background-color': vinyl.color}" class="swatch">
+								<p>{{ vinyl.tag }}</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
