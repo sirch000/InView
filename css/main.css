@@ -16,7 +16,6 @@
   position: fixed;
   top: 50%;
   left: 50%;
-  /* bring your own prefixes */
   transform: translate(-50%, -50%);
 }
 
@@ -25,6 +24,37 @@ img {
 	margin: 0px;
 	width: 824px;
 	height: 540px;
+}
+
+button {
+	height: 40px;
+	width: 40px;
+	font-size: 32px;
+	background-color: #FFFFFF;
+	border: none;
+	padding: 0px;
+	outline: none;
+}
+
+button:active {
+	color: grey;
+}
+
+.arrows {
+	float: right;
+  	position: fixed;
+  	top: 80%;
+  	left: 91%;
+  	transform: translate(-50%, -50%);
+}
+
+.left-arrow {
+	text-align: left;
+}
+
+.right-arrow {
+	text-align: right;
+	margin-left: 15px;
 }
 
 .footer {
@@ -46,6 +76,11 @@ img {
 
 .swatch:hover {
 	cursor: pointer;
+}
+
+.swatch:active {
+	color: grey;
+	border-color: grey;
 }
 
 li, p {
@@ -78,8 +113,6 @@ ul {
 .carpet-list {
 	width: 400px;
 }
-
-
 
 .left,
 .middle,
