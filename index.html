@@ -15,13 +15,11 @@
 	<body ng-controller="inViewController">
 		<div class="header">
 		</div>
+		<button class="glyphicon glyphicon-circle-arrow-left left-arrow"></button>
 		<div class="floor-plan-container" ng-repeat="floorplan in floorplans">
 			<img ng-src="{{floorplan.url}}">
 		</div>
-		<div class="btn-group arrows" role="group">
-			<button class="glyphicon glyphicon-circle-arrow-left left-arrow"></button>
-			<button class="glyphicon glyphicon-circle-arrow-right right-arrow"></button>
-		</div>
+		<button class="glyphicon glyphicon-circle-arrow-right right-arrow"></button>
 		<div class="footer">
 			<div id="flooring-lists-container">
 				<div class="left">
@@ -56,7 +54,6 @@
 						</li>
 					</ul>
 				</div>
-
 				<div class="right">
 					<ul class="laminate-list">
 						<li ng-repeat="laminate in flooring.laminate">

@@ -29,32 +29,36 @@ img {
 button {
 	height: 40px;
 	width: 40px;
-	font-size: 32px;
+	font-size: 36px;
 	background-color: #FFFFFF;
+	color: grey;
 	border: none;
 	padding: 0px;
 	outline: none;
+}
+
+button:hover {
+	color: black;
 }
 
 button:active {
 	color: grey;
 }
 
-.arrows {
-	float: right;
-  	position: fixed;
-  	top: 80%;
-  	left: 91%;
+.left-arrow {
+	text-align: center;
+	position: fixed;
+  	top: 48%;
+  	left: 20%;
   	transform: translate(-50%, -50%);
 }
 
-.left-arrow {
-	text-align: left;
-}
-
 .right-arrow {
-	text-align: right;
-	margin-left: 15px;
+	text-align: center;
+	position: fixed;
+  	top: 48%;
+  	left: 80%;
+  	transform: translate(-50%, -50%);
 }
 
 .footer {
