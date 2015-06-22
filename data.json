@@ -1,5 +1,11 @@
 {
   "flooring": {
+    "floorplans": [
+      {
+        "url": "img/fp1.png"
+      }
+    ],
+    
     "carpet": [
       {
       "tag": "C1",

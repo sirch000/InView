@@ -15,8 +15,8 @@
 	<body ng-controller="inViewController">
 		<div class="header">
 		</div>
-		<div class="floor-plan-container">
-			<img src="img/fp1.png">
+		<div class="floor-plan-container" ng-repeat="floorplan in floorplans">
+			<img ng-src="{{floorplan.url}}">
 		</div>
 		<div class="btn-group arrows" role="group">
 			<button class="glyphicon glyphicon-circle-arrow-left left-arrow"></button>
