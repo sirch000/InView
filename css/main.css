@@ -1,3 +1,10 @@
+* {
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+  	-moz-user-select: none;     /* Firefox all */
+ 	 -ms-user-select: none;      /* IE 10+ */
+  	user-select: none; 
+}
+
 .header, .footer {
 	display: block;
 	right:0;
@@ -12,20 +19,140 @@
 	top:0;
 }
 
-.floor-plan-container {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.logo {
+	position: relative;
+	height: 62px;
+	width: 130px;
+	top: 48%;
+  	left: 6%;
+  	transform: translate(-50%, -50%);
 }
 
-img {
+#logoImg {
+	height: 62px;
+	width: 129px;
+}
+
+.floorplans {
 	position: static;
 	margin: 0px;
 	width: 824px;
 	height: 540px;
 }
 
+.slider {
+	width: 824px;
+	height: 540px;
+    overflow: hidden;
+    position: fixed;
+    top: 48%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.arrow {
+    position: absolute;
+    z-index: 1002;
+    display: block;
+    top: 50%;
+    margin-top: -35px;
+    width: 36px;
+    height: 71px;
+    outline: none;
+    cursor: pointer;
+    background: url(../assets/img/blank.gif) no-repeat;
+}
+
+.arrow.prev {
+    opacity: 0.2;
+    left: 20px;
+    background-image: url(../assets/img/paddle_prev_999.png);
+    transition: 0.2s linear all;
+}
+
+.arrow.next {
+    opacity: 0.2;
+    right: 20px;
+    background-image: url(../assets/img/paddle_next_999.png);
+    transition: 0.2s linear all;
+}
+
+.arrow.prev:hover {
+    opacity: 1;
+    background-image: url(../assets/img/paddle_prev_fff.png);
+}
+
+.arrow.next:hover {
+    opacity: 1;
+    background-image: url(../assets/img/paddle_next_fff.png);
+}
+
+.nav {
+    text-align: center;
+    display: block;
+    position: absolute;
+    z-index: 1002;
+    left: 0;
+    bottom: -4px;
+    right: 0;
+    height: 25px;
+}
+
+.nonDraggableImage{
+    -webkit-user-drag: none;
+}
+
+.nav ul {
+    margin: 0;
+    width: 100%;
+}
+
+.nav .dot, .nav .dot a {
+    display: inline-block;
+    zoom: 1;
+}
+
+.dots .dot {
+    position: relative;
+    margin: 0 8px;
+    width: 14px;
+    height: 14px;
+}
+
+.dots .dot a {
+    position: absolute;
+    top: 50%;
+    left: 2px;
+    width: 6px;
+    height: 6px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    background-color: transparent;
+    border: 1px solid #000;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transition: background-color 0.25s, border-color 0.25s;
+    -moz-transition: background-color 0.25s, border-color 0.25s;
+    transition: background-color 0.25s, border-color 0.25s;
+}
+
+.dots .dot a.active {
+    border-color: transparent;
+    background-color: #000;
+}
+/*
 button {
 	height: 40px;
 	width: 40px;
@@ -43,7 +170,7 @@ button:hover {
 
 button:active {
 	color: grey;
-}
+}*/
 
 .left-arrow {
 	text-align: center;
