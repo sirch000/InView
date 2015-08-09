@@ -1,3 +1,7 @@
+body, html { 
+	height: 100%;
+}
+
 * {
 	-webkit-user-select: none;  /* Chrome all / Safari all */
   	-moz-user-select: none;     /* Firefox all */
@@ -23,35 +27,31 @@
 	position: relative;
 	height: 62px;
 	width: 130px;
-	top: 48%;
+	top: 60%;
   	left: 6%;
   	transform: translate(-50%, -50%);
 }
 
 #logoImg {
-	height: 62px;
-	width: 129px;
-}
-
-.floorplans {
-	position: static;
-	margin: 0px;
-	width: 824px;
-	height: 540px;
+	height: 40px;
+	width: 90px;
 }
 
 .slider {
-	width: 824px;
-	height: 540px;
+    width: 800px;
+    height: 480px;
     overflow: hidden;
-    position: fixed;
-    top: 48%;
-  	left: 50%;
-  	transform: translate(-50%, -50%);
+    position: relative;
+    border: none;
+    margin-top: 20%;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .slide {
     position: absolute;
+    height: 480px;
+	width: 800px;
     top: 0;
     left: 0;
 }
@@ -70,42 +70,55 @@
 }
 
 .arrow.prev {
-    opacity: 0.2;
-    left: 20px;
+    opacity: .9;
+    left: 15%;
     background-image: url(../assets/img/paddle_prev_999.png);
-    transition: 0.2s linear all;
+    transition: 0.09s linear all;
 }
 
 .arrow.next {
-    opacity: 0.2;
-    right: 20px;
+    opacity: .9;
+    right: 15%;
     background-image: url(../assets/img/paddle_next_999.png);
-    transition: 0.2s linear all;
+    transition: 0.09s linear all;
 }
 
-.arrow.prev:hover {
-    opacity: 1;
+.arrow.prev:active {
+    opacity: .3;
     background-image: url(../assets/img/paddle_prev_fff.png);
 }
 
-.arrow.next:hover {
-    opacity: 1;
+.arrow.next:active {
+    opacity: .3;
     background-image: url(../assets/img/paddle_next_fff.png);
 }
 
+
+/*---------------------------------------------------------
+NAV
+---------------------------------------------------------*/
+
 .nav {
+	position: absolute;
     text-align: center;
     display: block;
     position: absolute;
     z-index: 1002;
+    top: 95%;
     left: 0;
     bottom: -4px;
     right: 0;
-    height: 25px;
+    height: 30px;
 }
 
 .nonDraggableImage{
     -webkit-user-drag: none;
+}
+
+.nav .wrapper {
+    margin: 0 auto;
+    width: 100%;
+    padding: 1em 0 .8em;
 }
 
 .nav ul {
@@ -121,21 +134,21 @@
 .dots .dot {
     position: relative;
     margin: 0 8px;
-    width: 14px;
-    height: 14px;
+    width: 12px;
+    height: 12px;
 }
 
 .dots .dot a {
     position: absolute;
-    top: 50%;
+    top: 2px;
     left: 2px;
     width: 6px;
     height: 6px;
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;
-    background-color: transparent;
-    border: 1px solid #000;
+    background: transparent;
+    border: 1px solid black;
     outline: none;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
@@ -149,43 +162,8 @@
 }
 
 .dots .dot a.active {
-    border-color: transparent;
+    border-color: #000;
     background-color: #000;
-}
-/*
-button {
-	height: 40px;
-	width: 40px;
-	font-size: 36px;
-	background-color: #FFFFFF;
-	color: grey;
-	border: none;
-	padding: 0px;
-	outline: none;
-}
-
-button:hover {
-	color: black;
-}
-
-button:active {
-	color: grey;
-}*/
-
-.left-arrow {
-	text-align: center;
-	position: fixed;
-  	top: 48%;
-  	left: 20%;
-  	transform: translate(-50%, -50%);
-}
-
-.right-arrow {
-	text-align: center;
-	position: fixed;
-  	top: 48%;
-  	left: 80%;
-  	transform: translate(-50%, -50%);
 }
 
 .footer {
