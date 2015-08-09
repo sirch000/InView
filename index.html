@@ -12,6 +12,7 @@
 		<script src="js/node_modules/angular-animate/angular-animate.min.js"></script>
 		<script src="js/node_modules/gsap/src/minified/TweenMax.min.js"></script>
 		<script src="js/app.js"></script>
+		<script src="paperjs-v0.9.23/dist/paper-full.min.js"></script>
 	</head>
 	<body ng-controller="MainCtrl">
 		<div class="header">
@@ -21,7 +22,7 @@
 		</div>
 		<a class="arrow prev" href="#" ng-click="prevSlide()"></a>
 		<div class="floor-plan-container slider">
-			<img ng-repeat="slide in slides" class="slide slide-animation floorplans" ng-hide="!isCurrentSlideIndex($index)" ng-src="{{slide.image}}">
+			<img ng-repeat="slide in slides" class="slide slide-animation floorplans" id="fp" ng-hide="!isCurrentSlideIndex($index)" ng-src="{{slide.image}}">
 			<nav class="nav">
         		<ul class="dots">
             		<li class="dot" ng-repeat="slide in slides">

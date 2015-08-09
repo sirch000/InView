@@ -1,5 +1,8 @@
-body, html { 
+body { 
+	position: fixed;
 	height: 100%;
+	min-height: 1600px;
+	min-width: 1440px;
 }
 
 * {
@@ -43,7 +46,7 @@ body, html {
     overflow: hidden;
     position: relative;
     border: none;
-    margin-top: 20%;
+    margin-top: 20.5%;
     margin-left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -60,8 +63,7 @@ body, html {
     position: absolute;
     z-index: 1002;
     display: block;
-    top: 50%;
-    margin-top: -35px;
+    top: 21.5%;
     width: 36px;
     height: 71px;
     outline: none;
